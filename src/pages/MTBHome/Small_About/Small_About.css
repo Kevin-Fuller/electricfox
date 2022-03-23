@@ -1,0 +1,9 @@
+.small-about-title {
+    color: var(--MTBLight);
+    font-size: 30px;
+    font-family: var(--PrimaryFont);
+    margin: 0;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}

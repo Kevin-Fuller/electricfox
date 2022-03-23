@@ -1,0 +1,41 @@
+.two-column-about-p {
+    font-size: 22px;
+    color: var(--MTBLight);
+    width: 100%;
+    font-family: var(--PrimaryFont);
+    margin-top: 60px;
+
+}
+
+.two__column__about__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.two__column__about__right,
+.two__column__about__left {
+    width: 48%;
+}
+
+
+.two__column__about__right {
+    margin-left: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .two__column__about__right,
+    .two__column__about__left {
+    width: 100%;
+    }
+
+    .two-column-about-p {
+        font-size: 20px;
+        margin-top: 30px;
+
+    }
+}

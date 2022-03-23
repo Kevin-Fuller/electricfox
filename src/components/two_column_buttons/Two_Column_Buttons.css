@@ -1,0 +1,108 @@
+/* two column button*/
+.two-column-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 780px;
+    justify-content: space-between;
+}
+
+.two-column-button-button-left {
+  margin-left: 20px;
+}
+.two-column-button-button-right {
+  margin-right: 20px;
+}
+
+.two-column-button-button {
+    width: 250px;
+    border-radius: 25px;
+    background-color: var(--MTBLight);
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: var(--MTBBG);
+    font-size: 18px;
+    font-family: var(--PrimaryFont);
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 550px) {
+  
+  .two-column-button-button {
+  width: 200px;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 470px) {
+  .two-column-buttons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .two-column-button-button {
+    width: 300px;
+    }
+
+  .two-column-button-button-left {
+    margin-left: 0;
+  }
+  .two-column-button-button-right {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  
+}
+
+.two-column-button-button:hover {
+    animation: animatedBnrotate 0.7s ease-in-out both;
+    background-color: var(--MTBColor1);
+}
+
+.two-column-button-button:hover .animatedBnspan {
+    animation: animatedBnstorm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+
+@keyframes animatedBnrotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(1.5deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-1.5deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes animatedBnstorm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}

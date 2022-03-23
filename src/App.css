@@ -1,0 +1,14 @@
+:root {
+    --MTBDark: black;
+    --MTBLight: #ffd7be;
+    --MTBColor1: #dab197;
+    --MTBColor2: #f89254;
+    --MTBColor3: #cd3341;
+    --MTBBG: #361130;
+    --PrimaryFont: sans-serif;
+}
+
+.center-horizontally {
+    display: flex;
+    justify-content: center;
+}
