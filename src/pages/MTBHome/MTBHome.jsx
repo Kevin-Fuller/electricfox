@@ -29,10 +29,12 @@ const MTBHome = () => {
 
 
   return (
+
+    
     <div className='mtb__homepage'>
+      {Biking_parallax(Images.bg, Images.bg6, Images.bg5, Images.bg4, Images.bg3, Images.bg2, Images.bg1, Images.mainLogoMTB, Images.bgMain)}
       <div className='mtb__homepage__wrapper'>
-      
-      <Biking_parallax />
+       
 
       {info.map((information) => {
         leftButton = information.LeftButton1;
@@ -50,7 +52,8 @@ const MTBHome = () => {
       </div>
 
         })}
-    
+
+       
         <Small_About />
 
         {Two_Column_Buttons('Our story', 'Our story', 'Media', 'Media')}
