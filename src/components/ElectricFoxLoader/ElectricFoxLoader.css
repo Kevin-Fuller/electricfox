@@ -1,0 +1,160 @@
+* {
+    margin:0;
+    padding: 0;
+  }
+  
+  .loadingWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #111111; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    animation: wrapperFade 0.25s 2.5s forwards;
+    pointer-events: none;
+    z-index:99999999;
+  }
+  
+  
+  .loaderText {
+    color: white;
+    font-size: 3.5vw;
+    background-color: #111111;
+    margin: -0.2em;
+    font-family: sans-serif;
+    white-space: nowrap
+  }
+  
+  .loaderTextMain {
+    z-index: 5;
+    background-color: #111111;
+    line-height: 1.5em;
+    animation: off 2s forwards, growText 2s 2s;
+    opacity: 0;
+     transition-timing-function: ease-out;
+  }
+  
+  .loaderTextOff1 {
+    color: black;
+    opacity: 0;
+    z-index: 4;
+    animation: off1 2s;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+  }
+  
+  .loaderTextOff2 {
+    opacity: 0;
+    animation: off2 2s;
+  }
+  
+  @keyframes off {
+    5% {
+      opacity: 0;
+    }
+    6% {
+      opacity: 1;
+    }
+    29% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0;
+    }
+    59% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  @keyframes off1 {
+    9% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    39% {
+      opacity: 1;
+    }
+    40% {
+      opacity: 0;
+    }
+    49% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  
+    80%{
+      opacity: 1;
+    }
+    81% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  @keyframes off2 {
+    19% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    
+    70% {
+      opacity: 1;
+  
+    }
+    71% {
+      opacity: 0;
+    }
+  
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  @keyframes growText {
+    0% {
+      font-size: 3.5vw;
+      
+    }
+    80% {
+      opacity: 1; 
+    }
+    100% {
+      font-size: 1500vw;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes wrapperFade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

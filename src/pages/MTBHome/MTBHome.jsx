@@ -7,6 +7,7 @@ import Small_About from './Small_About/Small_About';
 import Two_Column_Buttons from '../../components/two_column_buttons/Two_Column_Buttons';
 import Marquee from "react-fast-marquee";
 import {Images} from '../../constants'
+import Navbar from '../../components/navbar/Navbar';
 
 const MTBHome = () => {
 
@@ -29,8 +30,8 @@ const MTBHome = () => {
 
 
   return (
-
-    
+    <>
+    <Navbar />
     <div className='mtb__homepage'>
       {Biking_parallax(Images.bg, Images.bg6, Images.bg5, Images.bg4, Images.bg3, Images.bg2, Images.bg1, Images.mainLogoMTB, Images.bgMain)}
       <div className='mtb__homepage__wrapper'>
@@ -85,6 +86,7 @@ const MTBHome = () => {
         </Marquee>
 
     </div>
+    </>
   )
 }
 
