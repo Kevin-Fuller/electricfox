@@ -10,7 +10,7 @@ import {Images} from '../../constants'
 import Navbar from '../../components/navbar/Navbar';
 import ImagePopup from '../../components/ImagePopup/ImagePopup';
 import HomePageGallery from '../../components/HomePageGallery/HomePageGallery';
-import Swiper from '../../components/swiper/Swiper'
+import SwiperPage from '../../components/SwiperPage/SwiperPage'
 
 const MTBHome = () => {
 
@@ -58,7 +58,7 @@ const MTBHome = () => {
 
         })}
 
-       <Swiper />
+       <SwiperPage />
         <Small_About />
 
         <div className='beforeOurStoryButtons'></div>

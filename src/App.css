@@ -18,6 +18,7 @@
     --MTBColor2: #47b86f;
     --MTBColor3: #8d65fc;
     --MTBBG: #070400; 
+    --MTBBGTransparent: #070400dc; 
     
 }
 
@@ -35,3 +36,18 @@
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
   }
+
+
+  .grabbable {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+.grabbable:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+}

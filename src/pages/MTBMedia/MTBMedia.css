@@ -1,0 +1,13 @@
+.mtb__media {
+    background-color: var(--MTBBG);
+    color: var(--MTBLight);
+}
+
+.mtb__media__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
