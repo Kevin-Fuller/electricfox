@@ -15,6 +15,7 @@
     max-width: 1000px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .mtb-header-title {
@@ -25,6 +26,7 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 0.5em;
 }
 
 .mtb-header-title.quote {
@@ -50,6 +52,17 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 1em;
+}
+
+.beforeOurStoryButtons {
+  margin-top: 45px;
+}
+
+.beforeHomeGallery {
+  margin-top: 120px;
+}
+.afterHomeGallery {
+  margin-bottom: 45px;
 }
 
 

@@ -29,6 +29,19 @@ import BWBG4 from '../images/electricFox/BWBG4.png'
 import BWBG5 from '../images/electricFox/BWBG5.png'
 import BWBG6 from '../images/electricFox/BWBG6.png'
 import Blank from '../images/electricFox/BlankGraphic.png'
+import GBG from '../images/salon/bggreen.png';
+import GBG1 from '../images/salon/bgfront1.png';
+import GBG2 from '../images/salon/2green.png';
+import GBG3 from '../images/salon/bg3green.png';
+import GBG4 from '../images/salon/bg4green.png';
+import GBG5 from '../images/salon/bg5green.png';
+import GBG6 from '../images/salon/bgfront2forreal.png';
+import img01 from '../images/mtb/media/griffin-40.jpg';
+import img02 from '../images/mtb/media/griffin-118.jpg';
+import img03 from '../images/mtb/media/griffin-144.jpg';
+import img04 from '../images/mtb/media/griffin-513.jpg';
+import img05 from '../images/mtb/media/IMG-4141.jpg';
+import img06 from '../images/mtb/media/SDMBC18-66.jpg';
 
 
 
@@ -62,5 +75,18 @@ export default {
     BWBG4,
     BWBG5,
     BWBG6,
-    Blank
+    Blank,
+    GBG,
+    GBG1,
+    GBG2,
+    GBG3,
+    GBG4,
+    GBG5,
+    GBG6,
+    img01,
+    img02,
+    img03,
+    img04,
+    img05,
+    img06
 }

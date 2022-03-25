@@ -1,9 +1,9 @@
 import React from 'react'
 import './Swiper.css'
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
+
+import './Swiper.css';
 
 
 function newSwiper() {

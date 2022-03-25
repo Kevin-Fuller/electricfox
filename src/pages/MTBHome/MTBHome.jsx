@@ -8,6 +8,9 @@ import Two_Column_Buttons from '../../components/two_column_buttons/Two_Column_B
 import Marquee from "react-fast-marquee";
 import {Images} from '../../constants'
 import Navbar from '../../components/navbar/Navbar';
+import ImagePopup from '../../components/ImagePopup/ImagePopup';
+import HomePageGallery from '../../components/HomePageGallery/HomePageGallery';
+import Swiper from '../../components/swiper/Swiper'
 
 const MTBHome = () => {
 
@@ -33,7 +36,8 @@ const MTBHome = () => {
     <>
     <Navbar />
     <div className='mtb__homepage'>
-      {Biking_parallax(Images.bg, Images.bg6, Images.bg5, Images.bg4, Images.bg3, Images.bg2, Images.bg1, Images.mainLogoMTB, Images.bgMain)}
+      {Biking_parallax(Images.GBG, Images.GBG5, Images.GBG4, Images.GBG3, Images.GBG2,Images.GBG6, Images.GBG1, Images.mainLogoMTB, Images.bgMain)}
+      {/* {Biking_parallax(Images.bg, Images.bg6, Images.bg5, Images.bg4, Images.bg3, Images.bg2, Images.bg1, Images.mainLogoMTB, Images.bgMain)} */}
       <div className='mtb__homepage__wrapper'>
        
 
@@ -54,10 +58,16 @@ const MTBHome = () => {
 
         })}
 
-       
+       <Swiper />
         <Small_About />
 
+        <div className='beforeOurStoryButtons'></div>
+
         {Two_Column_Buttons('Our story', 'Our story', 'Media', 'Media')}
+        <div className='beforeHomeGallery'></div>
+
+        <HomePageGallery />
+        <div className='afterHomeGallery'></div>
 
 
         <h2 className='mtb-header-title quote'>{quote1}</h2>

@@ -1,14 +1,37 @@
 :root {
     --MTBDark: black;
-    --MTBLight: #ffd7be;
+    /* --MTBLight: #ffd7be; 
     --MTBColor1: #dab197;
     --MTBColor2: #f89254;
     --MTBColor3: #cd3341;
-    --MTBBG: #361130;
-    --PrimaryFont: sans-serif;
+    --MTBBG: #361130; */
+    --PrimaryFont: sans-serif; 
+
+
+    /* --MTBLight: #e2fadc;
+    --MTBColor1: #566431;
+    --MTBColor22: #79bc2f;
+    --MTBColor32: #BEED76; */
+
+    --MTBLight: #fbf8f8;
+    --MTBColor1: #097b20;
+    --MTBColor2: #47b86f;
+    --MTBColor3: #8d65fc;
+    --MTBBG: #070400; 
+    
 }
 
 .center-horizontally {
     display: flex;
     justify-content: center;
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
