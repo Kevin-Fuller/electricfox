@@ -20,6 +20,15 @@ import bg4 from '../images/mtb/parallax/bg4.png'
 import bg5 from '../images/mtb/parallax/bg5.png'
 import bg6 from '../images/mtb/parallax/bg6.png'
 import bgMain from '../images/mtb/parallax/picture.jpg'
+import BWBG from '../images/electricFox/BWBG.png'
+import BWBG0 from '../images/electricFox/BWBG0.png'
+import BWBG1 from '../images/electricFox/BWBG1.png'
+import BWBG2 from '../images/electricFox/BWBG2.png'
+import BWBG3 from '../images/electricFox/BWBG3.png'
+import BWBG4 from '../images/electricFox/BWBG4.png'
+import BWBG5 from '../images/electricFox/BWBG5.png'
+import BWBG6 from '../images/electricFox/BWBG6.png'
+import Blank from '../images/electricFox/BlankGraphic.png'
 
 
 
@@ -44,5 +53,14 @@ export default {
     bg5,
     bg6,
     bgMain,
-    mainLogoMTB
+    mainLogoMTB,
+    BWBG,
+    BWBG0,
+    BWBG1,
+    BWBG2,
+    BWBG3,
+    BWBG4,
+    BWBG5,
+    BWBG6,
+    Blank
 }

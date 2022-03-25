@@ -24,9 +24,9 @@ const Navbar = () => {
           <div className='navLine3 navLine'></div>
         </div>
         <ul className={isActive ? "active" : ""}>
-          <li><a href='biking/about'>About</a></li>
-          <li><a href='biking/programs'>Programs</a></li>
-          <li><a href='biking/media/'>Media</a></li>
+          <li><a href='/biking/about'>About</a></li>
+          <li><a href='/biking/programs'>Programs</a></li>
+          <li><a href='/biking/media/'>Media</a></li>
         </ul>
       </div>
     </nav>
