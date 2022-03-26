@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className='defaultNavbar'>
       <div className="navbar__container">
         <div className='nav__logo'>
-          <a href='biking'>Sundance MTB Clinic</a>
+          <a href='/biking'>Sundance MTB Clinic</a>
         </div>
         <div className={isActive ? "navbar-toggle active" : "navbar-toggle"} onClick={() =>ToggleClass()}>
           <div className='navLine1 navLine'></div>
