@@ -10,6 +10,7 @@ import MTBAbout from './pages/MTBAbout/MTBAbout';
 import SwiperPage from './components/SwiperPage/SwiperPage'
 import MTBMedia from './pages/MTBMedia/MTBMedia';
 import MTBPrograms from './pages/MTBPrograms/MTBPrograms';
+import Footer from './components/Footer/Footer';
 
 function App(){
   return (
@@ -23,7 +24,9 @@ function App(){
         <Route path="/swiper" element={<SwiperPage />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
+      <Footer />
     </Router>
+
   )
 }
 

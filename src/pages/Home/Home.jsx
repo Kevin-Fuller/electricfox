@@ -4,32 +4,52 @@ import ElectricFoxNav from '../../components/navbar/ElectricFoxNav/ElectricFoxNa
 import ElectricFoxLoader from '../../components/ElectricFoxLoader/ElectricFoxLoader';
 import {Images} from '../../constants';
 import './Home.css';
+import SwiperPage from '../../components/SwiperPage/SwiperPage'
 
 const Home = () => {
   
   return (
-    <div>
+    <div className='homePage'>
       <ElectricFoxLoader />
       <ElectricFoxNav />
-      <img className='homePageHero' src={Images.BWBG} />
-      <div className='bigButtonWrapper'>
-        <a href="#" className='bigButton'>
-          <div className='bigButtonLeft'></div>
-          <div className='bigButtonRight'>
-            <h2>Electric Fox Hair Salon</h2>
-            <p>Get the look you want from an expert with 10+ years experience</p>
+      <div className='home-page-wrapper'>
+        <div className='home-page-wrapper-content'>
+      <div className='home-landing-hero'>
+        <div className='home-landing-content'>
+          <p>Your one stop shop for bla bla</p>
+          <h1>Electric <span className="fox">Fox</span><br></br>at Sundance</h1>
+          <h2>Content is goin ghere we will put it here is where the content goes.</h2>
+          <div className='landing-content-button-wrapper'>
+            <a href="" className='landing-content-button mtb-button'>MTB</a>
+            <a href="" className='landing-content-button salon-button'>Salon</a>
           </div>
-        </a>
-        <a href="/biking/" className='bigButton'>
-          <img src={Images.bgMain} />
-          <div className='bigButtonLeft'>
-            
-          </div>
-          <div className='bigButtonRight'>
-            <h2>Sundance Mountain Biking Skill Clinic</h2>
-            <p>A mountain biking clinic for both beginners and experts</p>
-          </div>
-          </a>
+        </div>
+        <div className='home-landing-graphic'></div>
+      </div>
+      <section className='homeLatestNews'>
+        {/* <img className='homePageHero' src={Images.BWBG} /> */}
+        <div className='homeHeroContent'>
+          <h1>Latest News</h1>
+          <SwiperPage />
+        </div>
+      </section>
+      <section className='aboutUsHome'>
+        <div className='aboutUsHomeContent'>
+          <h2>About us</h2>
+          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
+          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
+          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
+          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
+        </div>
+        <div className='aboutUsHomeGraphic'></div>
+
+
+      </section>
+      </div>
+      <div className='home-shape1'></div>
+      <div className='home-shape2'></div>
+      <div className='home-shape3'></div>
+      <div className='home-shape4'></div>
       </div>
     </div>
   )
