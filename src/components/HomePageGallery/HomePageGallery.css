@@ -2,7 +2,7 @@
   
     display: grid;
     grid-template-columns: 320px 320px 320px;
-    grid-template-rows: 180px 180px 180px;
+    grid-template-rows: 180px 180px;
     grid-gap: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -13,6 +13,7 @@
     .home__gallery__wrapper {
 
         grid-template-columns: 320px 320px;
+        grid-template-rows: 180px 180px 180px;
         
     }
     

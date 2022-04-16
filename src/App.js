@@ -11,6 +11,8 @@ import SwiperPage from './components/SwiperPage/SwiperPage'
 import MTBMedia from './pages/MTBMedia/MTBMedia';
 import MTBPrograms from './pages/MTBPrograms/MTBPrograms';
 import Footer from './components/Footer/Footer';
+import SalonHome from './pages/SalonHome/SalonHome';
+import SalonServices from './pages/SalonServices/SalonServices';
 
 function App(){
   return (
@@ -21,7 +23,9 @@ function App(){
         <Route path="/biking/about" element={<MTBAbout />}></Route>
         <Route path="/biking/media" element={<MTBMedia />}></Route>
         <Route path="/biking/programs" element={<MTBPrograms />}></Route>
+        <Route path="/salon" element={<SalonHome />}></Route>
         <Route path="/swiper" element={<SwiperPage />}></Route>
+        <Route path="/salon/services" element={<SalonServices />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
       <Footer />

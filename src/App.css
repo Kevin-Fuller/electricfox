@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;500;700;800&display=swap');
+
 :root {
     --MTBDark: black;
-    /* --MTBLight: #ffd7be; 
-    --MTBColor1: #dab197;
-    --MTBColor2: #f89254;
-    --MTBColor3: #cd3341;
-    --MTBBG: #361130; */
-    --PrimaryFont: sans-serif; 
+    --SalonLight: #ffd7be; 
+    --SalonColor1: #dab197;
+    --SalonColor2: #f89254;
+    --SalonColor3: #cd3341;
+    --SalonBG: #361130; 
+    --PrimaryFont: 'Plus Jakarta Sans', sans-serif;
+    word-spacing: 0.2em;
 
 
     /* --MTBLight: #e2fadc;
@@ -20,6 +23,10 @@
     --MTBBG: #070400; 
     --MTBBGTransparent: #070400dc; 
     
+}
+
+body {
+    background-color: rgb(15, 15, 15);
 }
 
 .center-horizontally {

@@ -1,0 +1,240 @@
+#salon__home {
+    background-color: var(--SalonBG);
+}
+
+.salon__homepage {
+    background-color: #900e35;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    
+
+
+}
+.salonAboutWrapperRel {
+    position: relative;
+}
+.salonBGAbout {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
+}
+
+
+
+.salon__about__continued {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.salon__homepage .rightTextAboutContinuedRegular {
+    color: rgb(255, 255, 255);
+}
+
+.salon__homepage .rightTextAboutContinuedSmall {
+    color: rgb(255, 255, 255);
+}
+
+.salon__homepage .leftPictureAboutContinued p {
+    color: rgb(255, 255, 255);
+}
+
+.salon__about__wrapper h2 {
+    font-size: 50px;
+    margin-bottom: 0.5em;
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.salon__about__break1 {
+    margin-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1200px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    font-family: var(--PrimaryFont);
+}
+
+.salon__about__break1 h2 {
+    width: 90%;
+    text-align: center;
+    font-size: 32px;
+    color: var(--SalonLight);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.salon__about__break1 h3 {
+    width: 90%;
+    text-align: center;
+    font-size: 32px;
+    color: var(--SalonColor2);
+}
+
+
+@media screen and (max-width: 750px) {
+.salon__about__break1 h2 {
+    font-size: 24px;
+}
+.salon__about__break1 h3 {
+    font-size: 18px;
+}
+}
+
+@media screen and (max-width: 750px ) {
+    .salon__about__continued {
+        flex-direction: column;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 500px ) {
+    .salon__about__wrapper h2 {
+        font-size: 40px;
+    }
+}
+
+
+.salon__homepage__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.salon__about__wrapper {
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1200px;
+    color: var(--MTBLight);
+    font-family: var(--PrimaryFont);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.salon__about__intro__2 {
+    background-color: rgb(37, 27, 58);
+}
+
+
+.salon__about__intro__2 h1 {
+    font-size: 48px;
+}
+
+.salon__about__intro__2 h2 {
+    font-size: 32px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 0.75em;
+    text-transform: capitalize;
+}
+
+.salon__about__intro__2 p {
+    font-size: 16=8px;
+    text-align: left;
+    padding-bottom: 0.5em;
+    color: rgb(206, 203, 203);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+
+.salon__about__intro {
+    z-index: 3;
+    
+    position: relative
+}
+.salon__about__intro h1 {
+    font-size: 62px;
+    max-width: 650px;
+    text-transform: uppercase;
+    margin-top: 2em;
+    color: var(--SalonColor2);
+}
+
+.salon__about__intro p {
+    font-size: 24px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    
+}
+
+.salon__about__line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--SalonColor2);
+}
+
+.salon__about__intro__right__highlight {
+    font-size: 90px;
+    font-weight: 900;
+    background: -webkit-linear-gradient(61deg, rgb(233, 157, 87) 0%, rgb(245, 35, 35));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1100px) {
+    .salon__about__intro__right__highlight {
+        font-size: 70px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .salon__about__intro__right__highlight {
+        font-size: 55px;
+    }
+    .salon__about__intro__right p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .salon__about__intro h1 {
+        font-size: 42px;
+    }
+
+.salon__about__intro p {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+}}
+
+.orderProduct {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    background-color: var(--SalonColor3);
+    color: white;
+    text-transform: uppercase;
+    display: inline-block
+}

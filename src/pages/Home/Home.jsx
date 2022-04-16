@@ -41,7 +41,10 @@ const Home = () => {
           <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
           <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
         </div>
-        <div className='aboutUsHomeGraphic'></div>
+        <div className='aboutUsHomeGraphic'>
+
+          
+        </div>
 
 
       </section>

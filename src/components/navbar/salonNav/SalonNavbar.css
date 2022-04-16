@@ -1,0 +1,138 @@
+
+.defaultNavbar {
+    position: sticky;
+    top: 0px;
+    left: 0;
+    z-index: 10000;
+    width: 100;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MTBBGTransparent);
+    margin: 0;
+    border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+.nav__logo {
+    margin-left: 5%;
+    font-size: 26px;
+}
+
+.navbar__container {
+    width: 100%;
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__container ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+
+    max-width: 1000px;
+}
+
+.navbar__container ul li {
+    font-size: 16px;
+}
+
+.navbar__container ul li a {
+    padding: 0.75em;
+}
+
+.navbar__container a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--PrimaryFont);
+    display: inline-block;
+}
+
+.nav__logo {
+    z-index: 10;
+}
+
+.navbar-toggle {
+    width: 50px;
+    height: 40px;
+    display: none;
+    z-index: 10;
+    margin-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navLine {
+    width: 80%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.navLine {
+    transition: 0.5s;
+}
+
+.navLine1 {
+    margin-top: 3px;
+}
+
+.navLine3 {
+    margin-bottom: 3px;
+}
+
+.active .navLine1 {
+    transform: rotate(45deg) translate(8px, 8px);
+    transition: 0.5s;
+}
+
+.active .navLine2 {
+    transform:  translateX(20px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.active .navLine3 {
+    transform: rotate(-45deg) translate(7px, -8px);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-toggle {
+        display: flex;
+    }
+
+    .navbar__container ul{
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 60%;
+        z-index: 5;
+        background-color: var(--MTBBG);
+        transform: translateX(100%);
+        transition: 0.5s ease-in-out;
+    }
+
+    .navbar__container ul.active {
+        transform: translateX(0%);
+        transition: 0.5s ease-in-out;
+    }
+
+    .navbar__container ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav__logo {
+        font-size: 18px;
+    }
+    
+}

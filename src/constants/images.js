@@ -42,10 +42,49 @@ import img03 from '../images/mtb/media/griffin-144.jpg';
 import img04 from '../images/mtb/media/griffin-513.jpg';
 import img05 from '../images/mtb/media/IMG-4141.jpg';
 import img06 from '../images/mtb/media/SDMBC18-66.jpg';
-
+import mtbLogoTall from '../images/mtb/logos/sundanceLogoTall.png';
+import sally from '../images/electricFox/sally.png';
+import mtbbgabouttest from '../images/electricFox/mtbbgabouttest.png';
+import news from '../images/mtb/media/news.jpg';
+import electricFoxStyalized from '../images/mtb/media/electricFoxStyalized1.JPG'
+import mtbimage01 from '../images/mtb/media/mtb-image01.jpg';
+import mtbimage02 from '../images/mtb/media/mtb-image02.jpg';
+import mtbimage03 from '../images/mtb/media/mtb-image03.jpg';
+import mtbimage04 from '../images/mtb/media/mtb-image04.jpg';
+import mtbimage05 from '../images/mtb/media/mtb-image05.JPG';
+import mtbimage06 from '../images/mtb/media/mtb-image06.jpg';
+import mtbimage07 from '../images/mtb/media/mtb-image07.jpg';
+import mtbimage08 from '../images/mtb/media/mtb-image08.jpg';
+import mtbimage09 from '../images/mtb/media/mtb-image09.jpg';
+import mtbimage10 from '../images/mtb/media/mtb-image10.jpg';
+import mtbimage11 from '../images/mtb/media/mtb-image11.JPG';
+import mtbimage12 from '../images/mtb/media/mtb-image12.JPG';
+import mtbimage13 from '../images/mtb/media/mtb-image13.jpg';
+import trey from '../images/mtb/media/Trey.jpeg';
+import salonaboutbg from '../images/electricFox/salonaboutbg.png';
 
 
 export default {
+    trey,
+    salonaboutbg,
+    mtbimage13,
+    mtbimage12,
+    mtbimage11,
+    mtbimage10,
+    mtbimage09,
+    mtbimage08,
+    mtbimage07,
+    mtbimage06,
+    mtbimage05,
+    mtbimage04,
+    mtbimage03,
+    mtbimage01,
+    mtbimage02,
+    electricFoxStyalized,
+    news,
+    mtbbgabouttest,
+    sally,
+    mtbLogoTall,
     logo1,
     logo2,
     logo3,

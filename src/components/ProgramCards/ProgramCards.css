@@ -7,6 +7,21 @@
     margin-top: 75px;
 }
 
+@media screen and (max-width: 1600px) {
+    .program__card__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .program__card__grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+
 .program__card__item {
     display: flex;
     justify-content: center;
