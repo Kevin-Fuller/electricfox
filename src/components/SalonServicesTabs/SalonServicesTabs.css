@@ -1,0 +1,54 @@
+.tab__tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    grid-gap: 20px;
+
+}
+
+.tab__tabs li {
+    text-align: center;
+    width: 100%;
+    background-color: var(--SalonColor2);
+    padding: 15px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.salon_tab.active {
+    background-color: white;
+}
+
+.tab__content {
+    width: 100%;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: black;
+
+}
+
+.salon__service__tab__wrapper {
+    padding-bottom: 30px;
+}
+
+.salon_content__tab {
+    display: none;
+    list-style-type: none;
+    width: 100%;
+
+}
+
+.salon_content__tab li {
+    border-bottom: 1px solid var(--SalonColor3);
+}
+
+.salon_content__tab li:last-child {
+    border-bottom: none;
+}
+
+.salon_content__tab.active {
+    display: inline-block;
+}

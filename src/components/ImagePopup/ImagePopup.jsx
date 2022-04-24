@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 function ImagePopup(image, description){
 
-    const [isActive, setActive] = useState(false);
+  const [isActive, setActive] = useState(false);
   const ToggleClass = () => {
     setActive(!isActive); 
    };

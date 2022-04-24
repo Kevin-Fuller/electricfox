@@ -1,194 +1,187 @@
 .homePage {
-    background-color: rgb(237, 241, 245);
+    background-color:rgb(19, 18, 18);
+    font-family: var(--PrimaryFont);
+    color: white;
 }
 
-.home-shape1{
-    background-color: orange;
-    height: 50px;
-    width: 50px;
-    left: 10vw;
-    top: 150px;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
-}
-.home-shape2{
-    background-color: rgb(174, 0, 255);
-    height: 100px;
-    width: 100px;
-    top: 200px;
-    left: 25vw;
-    position: absolute;
-    border-radius: 50%;
-    z-index: 1;
-}
 
 .home-page-wrapper {
     width: 90%;
-    max-width: 1800px;
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
+    height: 80vh;
+    min-height: 800px;
+    max-height: 1000px;
 
 }
 
-.home-page-wrapper-content {
-    backdrop-filter: blur(5px);
-    z-index:5;
-    position: relative;
-}
-
-.homeLatestNews {
-    width: 100%;
-    overflow-x: none;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-landing-hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 25px;
-}
-
-.home-landing-content {
+.mainLogoHome {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.home-landing-content h1 {
-    font-size: 64px;
-    font-family: var(--PrimaryFont);
-    text-transform: uppercase;
-    color: rgb(34, 34, 34);
-    margin: 0;
-}
-
-
-.home-landing-content p {
-    font-size: 18px;
-    font-family: var(--PrimaryFont);
-    color: rgb(77, 76, 76);
-}
-
-.home-landing-content h2 {
-    font-size: 22px;
-    font-family: var(--PrimaryFont);
-    color: rgb(77, 76, 76);
-}
-
-.landing-content-button-wrapper{
-    display: flex;
-    width: 100%;
-}
-
-.salon-button {
-    background-color: #db693c;
-}
-
-.mtb-button {
-    background-color: rgb(23, 190, 60);
-    margin-right: 15px;
-}
-
-.landing-content-button {
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-}
-
-.fox {
-    color: orange;
-}
-
-.home-landing-graphic {
-    width: 500px;
-    background-color: rgb(255, 255, 255);
-    height: 500px;
+    max-width: 425px;
+    height: 425px;
+    background-color: rgb(24, 23, 23);
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
     border-radius: 50%;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.164);
+    right: 30%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 3;
 }
 
-.homeHeroContent {
-    position: relative;
+.mainLogoHome img {
     width: 100%;
-    color: rgb(17, 17, 17);
-    max-width: 1400px;  
+    height: 100%;
+}
+
+
+.homepagehero {
+    height: 100vh;
     min-height: 500px;
+    max-height: 1000px;
+    display: flex;
+    position: relative;
+}
+
+.homebuttoncontainer {
+    display: flex;
+}
+
+.homepagebutton {
+    width: 130px;
+    height: 50px;
+    background-color: purple;
+    display: inline-block;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-family: var(--PrimaryFont);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
 }
 
-
-.homeHeroContent h1 {
-    margin-right: auto;
-    position: relative;
+.homepagebuttonmtb {
+    background-color: var(--MTBColor1);
+    margin-right: 30px;
 }
 
-.homeHeroContent h1::after {
-    content: "";
-    width: 40%;
-    background-color: rgb(255, 153, 0);
-    height: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.homepagebuttonsalon {
+    background-color: var(--SalonColor2);
+    color: rgb(44, 36, 43);
 }
 
-.aboutUsHome {
+.homepageheroleft {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(24, 23, 23);
     display: flex;
-    justify-content: space-between;
-}
-
-.aboutUsHomeContent {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.164);
-    padding: 15px;
-    width: 60%;
-}
-
-.aboutUsHomeGraphic {
-    width: 500px;
-    height: 500px;
-    background-color: #db693c;
-    border-radius: 50%;
-    border-bottom-left-radius: 10px;
-}
-.aboutUsHome h2{
-    font-size: 32px;
-    font-family: var(--PrimaryFont);
-    text-transform: uppercase;
-    margin-right: auto;
+    align-items: center;
     position: relative;
-    display: inline-block
 }
 
-.aboutUsHome h2::after {
-    content: "";
-    width: 40%;
-    background-color: rgb(255, 153, 0);
-    height: 5px;
+.homepageheroleft img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
     position: absolute;
-    bottom: 0;
-    left: 0;
+}
+.homepageheroleftcontent {
+    max-width: 60%;
+    color: white;
+    z-index: 2;
+    margin-left: 10%;
 }
 
-.aboutUsHome p{
-    font-size: 18px;
-    font-family: var(--PrimaryFont);
-    margin-top: 1em;
+.homepageheroleftcontent p {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.homepageheroleftcontent h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+
+.homepageheroleftcontent h1 .green {
+    color: var(--MTBColor2);
+    font-weight: 800;
+    font-size: 54px;
+}
+
+.homepageheroleftcontent h1 .orange {
+    color: var(--SalonColor2);
+    font-weight: 800;
+    font-size: 54px;
+    border-bottom: 0.2em solid rgb(255, 217, 0);
+}
+
+.homepageheroright {
+    width: 30%;
+    height: 100%;
+    background-color: var(--MTBColor3);
+}
+
+.homepageImageContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+}
+
+.homepageImage1 {
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transform: rotate(-15deg);
+    position: absolute;
+}
+.homepageImage2 {
+    width: 420px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transform: rotate(10deg);
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+.homepageImage3 {
+    width: 380px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    transform: rotate(-3deg);
+    position: absolute;
+    top: 60%;
+    right: 20%;
+}
+
+.homepage__about__intro {
+    z-index: 3;
+    
+    position: relative
+}
+.homepage__about__intro h1 {
+    font-size: 62px;
+    max-width: 650px;
+    text-transform: uppercase;
+    margin-top: 2em;
+    color: var(--SalonColor2);
+}
+
+.homepage__about__intro p {
+    font-size: 24px;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    
 }

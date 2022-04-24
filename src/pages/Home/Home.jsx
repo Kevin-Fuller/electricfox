@@ -5,6 +5,7 @@ import ElectricFoxLoader from '../../components/ElectricFoxLoader/ElectricFoxLoa
 import {Images} from '../../constants';
 import './Home.css';
 import SwiperPage from '../../components/SwiperPage/SwiperPage'
+import images from '../../constants/images';
 
 const Home = () => {
   
@@ -12,47 +13,37 @@ const Home = () => {
     <div className='homePage'>
       <ElectricFoxLoader />
       <ElectricFoxNav />
-      <div className='home-page-wrapper'>
-        <div className='home-page-wrapper-content'>
-      <div className='home-landing-hero'>
-        <div className='home-landing-content'>
-          <p>Your one stop shop for bla bla</p>
-          <h1>Electric <span className="fox">Fox</span><br></br>at Sundance</h1>
-          <h2>Content is goin ghere we will put it here is where the content goes.</h2>
-          <div className='landing-content-button-wrapper'>
-            <a href="" className='landing-content-button mtb-button'>MTB</a>
-            <a href="" className='landing-content-button salon-button'>Salon</a>
+      <div className='homepagehero'>
+        <div className='homepageheroleft'>
+          <img src={images.BWBG1}></img>
+          <div className='homepageheroleftcontent'>
+            <h1>Welcome to <span className='orange'>Electric Fox</span> at <span className='green'>Sundance.</span></h1>
+            <p>We are a company founded by sally. We specialize in both mountainbiking services and hair.</p>
+            <div className='homebuttoncontainer'>
+              <a href="#" className='homepagebutton homepagebuttonmtb'>Sundance MTB Skill Clinic</a>
+              <a href="#" className='homepagebutton homepagebuttonsalon'>Electric Fox Hair Salon</a>
+            </div>
           </div>
         </div>
-        <div className='home-landing-graphic'></div>
+        <div className='homepageheroright'></div>
+        <div className='mainLogoHome'><img src={images.circlelogo}></img></div>
       </div>
-      <section className='homeLatestNews'>
-        {/* <img className='homePageHero' src={Images.BWBG} /> */}
-        <div className='homeHeroContent'>
-          <h1>Latest News</h1>
-          <SwiperPage />
-        </div>
-      </section>
-      <section className='aboutUsHome'>
-        <div className='aboutUsHomeContent'>
-          <h2>About us</h2>
-          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
-          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
-          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
-          <p>Sally Marchand Collins regularly transforms herself from a diminutive uptown hairdresser to a single track-shredding she-beast ripping through local mountain-bike trails all in the same day.</p>
-        </div>
-        <div className='aboutUsHomeGraphic'>
-
+      <div className='home-page-wrapper'>
+      <section className='homepage__about__intro'>
+            <h1>Electric Fox is changing the game</h1>
+            <p>Our SalonSpa is an AVEDA Concept salon and spa offering complete, professional services through the pursuit of environmental sustainability. We are located downtown at the heart of the charming small-town, Zionsville.</p>
+            <p>Our Sundance program builds better bikers one skill at a time from the beginner through the advanced mountain biker. We offer stellar instruction by passionate, experienced and certified coaches.</p>
+            <div className='homebuttoncontainer'>
+              <a href="#" className='homepagebutton homepagebuttonmtb'>Learn to ride!</a>
+              <a href="#" className='homepagebutton homepagebuttonsalon'>Get the perfect cut!</a>
+            </div>
+            <div className='homepageImageContainer'>
+              <img src={images.trey} className='homepageImage1'></img>
+              <img src='https://images.bizbuysell.com/shared/listings/182/1826022/b40a91f9-67af-49d0-bb74-4e824207db74-W768.jpg' className='homepageImage2'></img>
+              <img src={images.mtbimage10} className='homepageImage3'></img>
+            </div>
+          </section>
           
-        </div>
-
-
-      </section>
-      </div>
-      <div className='home-shape1'></div>
-      <div className='home-shape2'></div>
-      <div className='home-shape3'></div>
-      <div className='home-shape4'></div>
       </div>
     </div>
   )

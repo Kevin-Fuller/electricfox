@@ -1,0 +1,67 @@
+.tab__content__hidden.active {
+    display: inline-block;
+}
+
+.tab__content__hidden {
+    display: none;
+    font-size: 16px;
+    padding: 0 18px;
+    padding-bottom: 0.5em;
+}
+
+.tab__clickable__title {
+    padding: 1em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+.active__salon__arrow {
+    margin-left: 0.5em;
+    display: inline-block;
+    transition: 0.2s;
+    transform-origin: center center;
+}
+
+.active__salon__arrow.active {
+    transform: rotate(90deg);
+}
+
+.tabIndividualContent {
+    display: flex;
+}
+
+.tabIndividualContent img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 750px) {
+    .tabIndividualContent img {
+        width: 150px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tabIndividualContent {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .tabIndividualContent img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 200px;
+    }
+}

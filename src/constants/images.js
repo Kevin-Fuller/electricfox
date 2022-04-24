@@ -62,10 +62,12 @@ import mtbimage12 from '../images/mtb/media/mtb-image12.JPG';
 import mtbimage13 from '../images/mtb/media/mtb-image13.jpg';
 import trey from '../images/mtb/media/Trey.jpeg';
 import salonaboutbg from '../images/electricFox/salonaboutbg.png';
+import circlelogo from '../images/electricFox/circlelogo.png';
 
 
 export default {
     trey,
+    circlelogo,
     salonaboutbg,
     mtbimage13,
     mtbimage12,
