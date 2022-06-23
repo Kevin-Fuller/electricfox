@@ -64,6 +64,7 @@
 .two-column-button-button:hover {
     animation: animatedBnrotate 0.7s ease-in-out both;
     background-color: var(--MTBColor1);
+    color: white;
 }
 
 .two-column-button-button:hover .animatedBnspan {

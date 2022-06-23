@@ -54,11 +54,11 @@ const SalonServicesTabs = () => {
   return (
     <div className='salon__service__tab__wrapper'>
         <ul className='tab__tabs'>
-            <li className={isActiveTab1 ? "salon_tab active" : "salon_tab"} onClick={() =>EnableClass('1')}>Hair Cuts</li>
+            <li className={isActiveTab1 ? "salon_tab active" : "salon_tab"} onClick={() =>EnableClass('1')}>Designer Hair Cuts</li>
 
-            <li className={isActiveTab2 ? "salon_tab active" : "salon_tab"} onClick={() =>EnableClass('2')}>Color & Texturizing</li>
+            <li className={isActiveTab2 ? "salon_tab active" : "salon_tab"} onClick={() =>EnableClass('2')}>Customized Color</li>
 
-            <li className={isActiveTab3 ? "salon_tab active" : "salon_tab"} onClick={() =>EnableClass('3')}>Other</li>
+            <li className={isActiveTab3 ? "salon_tab active" : "salon_tab"} onClick={() =>EnableClass('3')}>Other Services</li>
         </ul>
         <div className='tab__content'>
             <ul className={isActiveTab1 ? "salon_content__tab active" : "salon_content__tab"}>

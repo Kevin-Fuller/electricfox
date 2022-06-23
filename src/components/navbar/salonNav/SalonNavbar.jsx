@@ -2,6 +2,7 @@ import React from 'react'
 import './SalonNavbar.css';
 import ElectricFoxNav from '../ElectricFoxNav/ElectricFoxNav';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const SalonNavbar = () => {
   
@@ -16,7 +17,7 @@ const SalonNavbar = () => {
     <nav className='defaultNavbar'>
       <div className="navbar__container">
         <div className='nav__logo'>
-          <a href='/salon'>Electric Fox Salon</a>
+          <Link to='/salon'>Electric Fox at Sundance</Link>
         </div>
         <div className={isActive ? "navbar-toggle active" : "navbar-toggle"} onClick={() =>ToggleClass()}>
           <div className='navLine1 navLine'></div>
@@ -25,7 +26,7 @@ const SalonNavbar = () => {
         </div>
         <ul className={isActive ? "active" : ""}>
           <li><a href="https://www.aveda.com/locator/get_the_facts.tmpl?vanity=1&SalonID=3142" target="_blank">Order Product</a></li>
-          <li><a href='/salon/services'>Services</a></li>
+          <li><Link to='/salon/services'>Services</Link></li>
         </ul>
       </div>
     </nav>

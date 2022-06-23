@@ -1,7 +1,9 @@
 .homePage {
-    background-color:rgb(19, 18, 18);
+    background-color:rgb(17, 17, 17);
     font-family: var(--PrimaryFont);
     color: white;
+    display: inline-block;
+    width: 100%;
 }
 
 
@@ -10,31 +12,51 @@
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    height: 80vh;
-    min-height: 800px;
-    max-height: 1000px;
 
 }
 
 .mainLogoHome {
     width: 50%;
-    max-width: 425px;
-    height: 425px;
-    background-color: rgb(24, 23, 23);
+    max-width: 625px;
+    height: 625px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    border-radius: 50%;
     right: 30%;
     top: 50%;
     transform: translate(50%, -50%);
     z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .mainLogoHome {
+        max-width: 500px;
+        height: 500px;
+    }
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .mainLogoHome {
+        max-width: 400px;
+        height: 400px;
+    }
+    
 }
 
 .mainLogoHome img {
     width: 100%;
-    height: 100%;
+    height: 50%;
+    background-color: rgb(24, 23, 23);
+    object-fit: contain;
+    border-radius:20px;
+    margin: 10px;
+    border: 3px solid white;
 }
+
 
 
 .homepagehero {
@@ -67,12 +89,22 @@
 
 .homepagebuttonmtb {
     background-color: var(--MTBColor1);
+    
     margin-right: 30px;
+}
+.homepagebuttonmtb:hover {
+    background-color: rgb(21, 145, 21);
+    transition: 0.15s;
 }
 
 .homepagebuttonsalon {
     background-color: var(--SalonColor2);
     color: rgb(44, 36, 43);
+}
+
+.homepagebuttonsalon:hover {
+    background-color: rgb(238, 184, 122);
+    transition: 0.15s;
 }
 
 .homepageheroleft {
@@ -89,6 +121,7 @@
     height: 100%;
     z-index: 1;
     position: absolute;
+    object-fit: cover;
 }
 .homepageheroleftcontent {
     max-width: 60%;
@@ -145,13 +178,13 @@
     position: absolute;
 }
 .homepageImage2 {
-    width: 420px;
+    width: 320px;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     transform: rotate(10deg);
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 0;
 }
 .homepageImage3 {
@@ -165,10 +198,42 @@
     right: 20%;
 }
 
+.homepage__about__intro p {
+    font-size: 24px;
+    width: 60%;
+    max-width: 800px;
+    margin-bottom: 30px;
+    
+}
+
+@media screen and (max-width: 1400px) {
+    .homepageImage1 {
+        width: 250px;
+    }
+    .homepageImage2 {
+        width: 320px;
+
+    }
+    .homepageImage3 {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .homepageImageContainer {
+        display: none
+    }
+    .homepage__about__intro p {
+        width: 100%;
+    }
+}
+
 .homepage__about__intro {
     z-index: 3;
+    position: relative;
+    padding-bottom: 100px;
     
-    position: relative
 }
 .homepage__about__intro h1 {
     font-size: 62px;
@@ -178,10 +243,33 @@
     color: var(--SalonColor2);
 }
 
-.homepage__about__intro p {
-    font-size: 24px;
-    width: 80%;
-    max-width: 800px;
-    margin-bottom: 30px;
-    
+@media screen and (max-width: 800px) {
+    .homepageheroright {
+        display: none;
+    }
+    .mainLogoHome {
+        display: none;
+    }
+    .homepageheroleft {
+        width: 100%;
+    }
+    .homepage__about__intro h1 {
+        font-size: 48px;
+    }
+    .homepageheroleftcontent h1 {
+        font-size: 36px;
+    }
+    .homepageheroleftcontent h1 .orange {
+        font-size: 38px;
+    }
+    .homepageheroleftcontent h1 .green {
+        font-size: 38px;
+    }
+    .homepageheroleftcontent {
+        width: 80%;
+        margin-top: 25px;
+    }
+    .homepageheroleftcontent {
+        max-width: 100%;
+    }
 }

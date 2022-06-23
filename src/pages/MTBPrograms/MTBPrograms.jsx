@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar/Navbar'
 import ProgramCards from '../../components/ProgramCards/ProgramCards'
 
 const MTBPrograms = () => {
+  document.title = "Programs"
   return (
     <div className='mtb__programs__page'>
         <Navbar />

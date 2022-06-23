@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './ElectricFoxNav.css';
 
 const ElectricFoxNav = () => {
   return (
     <nav className="electric-fox-nav">
         <ul>
-            <li><a href="/" className='efLogoNav'>Electric Fox</a></li>
-            <li><a href="/biking/">Sundance MTB</a></li>
-            <li><a href="/salon/">Electric Fox Salon</a></li>
+            <li><Link to="/" className='efLogoNav'>Electric Fox</Link></li>
+            <li><Link to="/biking/">Sundance MTB</Link></li>
+            <li><Link to="/salon/">Electric Fox Salon</Link></li>
         </ul>
     </nav>
   )

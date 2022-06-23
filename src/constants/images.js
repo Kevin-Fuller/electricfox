@@ -28,6 +28,7 @@ import BWBG3 from '../images/electricFox/BWBG3.png'
 import BWBG4 from '../images/electricFox/BWBG4.png'
 import BWBG5 from '../images/electricFox/BWBG5.png'
 import BWBG6 from '../images/electricFox/BWBG6.png'
+import thumbnail from '../images/electricFox/thumbnail.jpg'
 import Blank from '../images/electricFox/BlankGraphic.png'
 import GBG from '../images/salon/bggreen.png';
 import GBG1 from '../images/salon/bgfront1.png';
@@ -63,15 +64,34 @@ import mtbimage13 from '../images/mtb/media/mtb-image13.jpg';
 import trey from '../images/mtb/media/Trey.jpeg';
 import salonaboutbg from '../images/electricFox/salonaboutbg.png';
 import circlelogo from '../images/electricFox/circlelogo.png';
+import circlelogomtb from '../images/electricFox/circlelogomtb.png';
+import logoLong from '../images/electricFox/logoLong.png';
+import logoLong2 from '../images/electricFox/logoLong2.png';
+import collagePete from '../images/electricFox/Collage-Pete.jpg';
+import salonMountainPhone from '../images/electricFox/salonMountainPhone.jpg';
+import sundancePhone from '../images/electricFox/sundancePhone.jpg';
+import brownepic from '../images/electricFox/brownepic.png';
+import fire from '../images/electricFox/fire.jpg';
+import graphicFox from '../images/electricFox/graphicFox.JPG';
 
 
 export default {
     trey,
+    fire,
+    graphicFox,
+    brownepic,
+    sundancePhone,
+    salonMountainPhone,
+    circlelogomtb,
+    logoLong2,
+    collagePete,
+    logoLong,
     circlelogo,
     salonaboutbg,
     mtbimage13,
     mtbimage12,
     mtbimage11,
+    thumbnail,
     mtbimage10,
     mtbimage09,
     mtbimage08,

@@ -7,7 +7,7 @@ import MTBMediaGrid from '../../components/MTBMediaGrid/MTBMediaGrid';
 import Two_Column_Buttons from '../../components/two_column_buttons/Two_Column_Buttons';
 
 const MTBMedia = () => {
-
+  document.title = "Media"
   const [info, setInfo] = useState([]);
   const infoCollectionRef = collection(db, 'biking_home_page');
   let leftButton = '';
@@ -24,10 +24,10 @@ const MTBMedia = () => {
   }, []);
 
   info.map((information) => {
-    leftButton = information.LeftButton1;
-    leftButtonLink = information.LeftButton1Link;
-    rightButton = information.RightButton1;
-    rightButtonLink = information.RightButton1Link;
+    leftButton = 'Programs';
+    leftButtonLink = '../biking/programs';
+    rightButton = 'Our Story';
+    rightButtonLink = '../biking/about';
   });
 
   return (

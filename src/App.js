@@ -13,10 +13,13 @@ import MTBPrograms from './pages/MTBPrograms/MTBPrograms';
 import Footer from './components/Footer/Footer';
 import SalonHome from './pages/SalonHome/SalonHome';
 import SalonServices from './pages/SalonServices/SalonServices';
+import ScrollToTop from './hooks/ScrollToTop';
+
 
 function App(){
   return (
     <Router>
+      <ScrollToTop>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/biking" element={<MTBHome />}></Route>
@@ -27,8 +30,11 @@ function App(){
         <Route path="/swiper" element={<SwiperPage />}></Route>
         <Route path="/salon/services" element={<SalonServices />}></Route>
         <Route path="*" element={<Error />}></Route>
+        
       </Routes>
+
       <Footer />
+      </ScrollToTop>
     </Router>
 
   )

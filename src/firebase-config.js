@@ -5,11 +5,10 @@ import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
     apiKey: `${process.env.API_KEY}`,
     authDomain: `${process.env.AuthDomain}`,
-    projectId: `electricfox-502bf`,
-    storageBucket: `electricfox-502bf.appspot.com`,
-    messagingSenderId: `350531897110`,
-    appId: `1:350531897110:web:0c9a49cfd13976abce3237`,
-    measurementId: `G-PED0LPCMWB`
+    projectId: `electricfox-460df`,
+    storageBucket: `electricfox-460df.appspot.com`,
+    messagingSenderId: `916440837670`,
+    appId: `1:916440837670:web:f36519b81d86f6f8acc0e7`,
   };
 
 const firebaseDatabase = initializeApp(firebaseConfig); 

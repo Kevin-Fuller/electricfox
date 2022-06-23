@@ -43,9 +43,9 @@
 }
 
 @media screen and (max-width: 600px){
-    .electric-fox-nav{
-        display: none;
-    
+    .electric-fox-nav ul li {
+        font-size: 12px;
+        text-align: center;
     }
 
     

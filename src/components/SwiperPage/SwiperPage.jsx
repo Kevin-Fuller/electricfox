@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
 import './Swiper.css'
 // Import Swiper React components
 import { Swiper, SwiperSlide} from 'swiper/react';
@@ -12,7 +12,9 @@ import 'swiper/css';
 import './Swiper.css';
 
 
-function newSwiper() {
+function newSwiper(image1, image2, image3, image4) {
+
+
   return (
     <div className='swiper_container'>
 
@@ -34,10 +36,10 @@ function newSwiper() {
       modules={[EffectCoverflow, Pagination]}
       slidesPerView={3}
     >
-      <SwiperSlide><div className='swiperContainerContent'></div></SwiperSlide>
-      <SwiperSlide><div className='swiperContainerContent'></div></SwiperSlide>
-      <SwiperSlide><div className='swiperContainerContent'></div></SwiperSlide>
-      <SwiperSlide><div className='swiperContainerContent'></div></SwiperSlide>
+      <SwiperSlide><div className='swiperContainerContent'><img src={image1} alt='swiper promotional image'/></div></SwiperSlide>
+      <SwiperSlide><div className='swiperContainerContent'><img src={image2} alt='swiper promotional image'/></div></SwiperSlide>
+      <SwiperSlide><div className='swiperContainerContent'><img src={image3} alt='swiper promotional image'/></div></SwiperSlide>
+      <SwiperSlide><div className='swiperContainerContent'><img src={image4} alt='swiper promotional image'/></div></SwiperSlide>
     </Swiper>
 
     </div>

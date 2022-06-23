@@ -18,7 +18,7 @@ function ImagePopup(image, description){
     >
         <div onClick={() =>ToggleClass()} className='imagePopUpContainer__wrapper' >
 
-        <img className='popUpImage noselect' src={image}></img>
+        <img className='popUpImage noselect' src={image} loading="lazy"></img>
         <p className='popUpImageText'>{description}</p>
 
         </div>

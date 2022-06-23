@@ -41,7 +41,7 @@
   }
   
   .loaderTextOff1 {
-    color: black;
+    color: transparent;
     opacity: 0;
     z-index: 4;
     animation: off1 2s;

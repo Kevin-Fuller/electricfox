@@ -73,3 +73,12 @@
     }
     
 }
+
+@media screen and (max-width: 800px) {
+    
+    .popUpImageText {
+        font-size: 20px;
+        transform: translate(-50%,-100%);
+    }
+    
+}

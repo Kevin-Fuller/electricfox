@@ -26,6 +26,10 @@
     margin-bottom: 0.5em;
 }
 
+.rightImageLogoIntoAbout {
+    width: 70%;
+    border-radius: 20px;
+}
 
 .mtb__about__intro {
     z-index: 3;
